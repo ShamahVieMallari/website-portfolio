@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" /> 
+    <title>Page Title</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                     <a href="index.html">Home</a>
+             </div>
+               <div class="nav-link-wrapper">
+                     <a href="about.html">About</a>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="brand">
+                     <div>SHAMAH VIE MALLARI</div>
+                </div>
+            </div>
+       </div>
+
+      <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio1.jpg)"></div>
+             
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img class="hover-image" src="images/logos/pubg.png" alt="">
+                        </div>
+
+                        <div class="subtitle"> PUBG Mobile is an immensely popular battle royale game and has been downloaded over 100 million times on Google Play Store. The name PUBG is an abbreviation and stands for PlayerUnknown's Battlegrounds.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio2.jpg)"></div>
+             
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/LOL.png">
+                        </div>
+
+                        <div class="subtitle"> League of Legends is a team-based strategy game where two teams of five powerful champions face off to destroy the other's base. Choose from over 140 champions to make epic plays, secure kills, and take down towers as you battle your way to victory.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio3.jpg)"></div>
+             
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/shoppe.png">
+                        </div>
+
+                        <div class="subtitle"> Shopee sellers are able to reduce their prices since they don't pay commission fees. ... There are other reasons why Shopee is a more cost-saving option for online shoppers. For example, some of its sellers offer discounts to customers who buy in bulk.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio4.jpg)"></div>
+             
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/youtube.png">
+                        </div>
+
+                        <div class="subtitle"> YouTube is a free video-sharing website owned by Google. The name “YouTube” is said to be derived from “You” which means you (from the fact that the video came from you) and “Tube” means television (cathode ray tube).
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio5.jpg)"></div>
+             
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/COC.png">
+                        </div>
+
+                        <div class="subtitle"> Clash of Clans is a freemium mobile strategy video game developed and published by Finnish game developer Supercell.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio6.jpg)"></div>
+             
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/instagram.png">
+                        </div>
+
+                        <div class="subtitle"> Instagram is a free, online photo-sharing application and social network platform that was acquired by Facebook in 2012. 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio7.jpg)"></div>
+             
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/messenger.png">
+                        </div>
+
+                        <div class="subtitle"> Messenger is a FREE mobile messaging app used for instant messaging, sharing photos, videos, audio recordings and for group chats. The app, which is free to download, can be used to communicate with your friends on Facebook and with your phone contacts.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio8.jpg)"></div>
+             
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/Dota2.png">
+                        </div>
+
+                        <div class="subtitle"> Dota 2 is to destroy the enemy Ancient Structure inside their stronghold, these strongholds are protected by multiple towers down 3 lanes.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio9.jpeg)"></div>
+             
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="images/logos/hacker.png">
+                        </div>
+
+                        <div class="subtitle"> Cyber security is the application of technologies, processes and controls to protect systems, networks, programs, devices and data from cyber attacks.
+                    </div>
+                </div>
+                       
+             </div>
+        </div>
+
+    </div>
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+        
+        portfolioItem.addEventListener('mouseout', () => {
+            
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+</script>
+</html>
